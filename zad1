@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CPSC 424, Lab 4, Exercise 1</title>
+</head>
+<body> 
+
+<h2>CS 424, Lab 4, Exercise 1</h2>
+
+<svg height="500" width="700" xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+        <g id="polygon" fill="grey" stroke="yellow" stroke-width="3">
+            <polygon points="0,30 21,21 30,0 21,-21 0,-30 -21,-21 -30,0 -21,21 0,30" transform="translate(80)">
+                    <animateTransform attributeName="transform" type="rotate" from="0 0 5"
+                        to="360 5 5" dur="10s" repeatCount="indefinite" />
+            </polygon>
+        </g>
+        <g id="triangle">
+            <path d="M 50,0 L 90,100 10,100 Z"/>
+        </g>
+        <g id="rectangle" fill="red">
+            <rect width="200" height="20"/>
+        </g>
+    </defs>
+
+    <use xlink:href="#polygon" transform="translate(60,120) scale(1.2,1.2)"/>
+    <use xlink:href="#polygon" transform="translate(200,160) scale(1.2,1.2)"/>
+    <use xlink:href="#polygon" transform="translate(290,280) scale(1.5,1.5)"/>
+    <use xlink:href="#polygon" transform="translate(480,345) scale(1.5,1.5)"/>
+    <use xlink:href="#polygon" transform="translate(540,100)"/>
+    <use xlink:href="#polygon" transform="translate(660,130)"/>
+
+    <use xlink:href="#rectangle" transform="rotate(15) translate(350,190) "/>
+    <use xlink:href="#rectangle" transform="rotate(15) translate(100,100) scale(0.7,0.9) "/>
+    <use xlink:href="#rectangle" transform="rotate(15) translate(550,-50)  scale(0.6,0.8)"/>
+
+    <use xlink:href="#triangle" transform="translate(330,300) scale(1,1.7)" fill="blue"/>
+    <use xlink:href="#triangle" transform="translate(93,145) scale(0.8,1.3)" fill="purple"/>
+    <use xlink:href="#triangle" transform="translate(573,115) scale(0.5,1)" fill="green"/>
+</svg>
+
+</body>
+</html>
